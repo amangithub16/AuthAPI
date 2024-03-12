@@ -27,7 +27,7 @@ const verifyMobile = async (req, res)=>{
       .create({
       body: `Hello Horse !!!! Your OTP is : ${generatedOTP}`,
       to: mobile, // Text your number
-      from: '+16509341304', // From a valid Twilio number
+      from: process.env.TWILIO_NUMBER, // From a valid Twilio number
     })
     console.log(OTP)
     } catch(err){
