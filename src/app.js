@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 app.use(cors())
-app.use(cors({origin: "http://127.0.0.1:5500/frontend/test.html"}))
+app.use(cors({origin: '*'}))
 
 
 import userRouter from './routes/user.routes.js'
