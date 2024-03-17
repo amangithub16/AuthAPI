@@ -129,13 +129,13 @@ const loginUser = async(req, res)=>{
 return  res.status(200)
 .cookie('token', token ,option)
 .json({
-  message:"Logged in successfully",
-  token
+  "message":"Logged in successfully",
+  "token" : token
 })
 }
 
 const logoutUser = async(req, res)=>{
-  
+
 
 }
 
