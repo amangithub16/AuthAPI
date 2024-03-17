@@ -99,6 +99,7 @@ const registerUser = async(req, res)=>{
 }
 
 const loginUser = async(req, res)=>{
+  console.log("sds");
   const {email, username, password} = req.body;
   if(!(username||email)){
     return res
