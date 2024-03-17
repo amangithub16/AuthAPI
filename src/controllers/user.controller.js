@@ -121,7 +121,7 @@ const loginUser = async(req, res)=>{
     return  res.status(401).json("Wrong Password!")
   }
 
-  const token = user.generateToken();
+  const token = await user.generateToken();
   const option = {
     httpOnly: true,
     secure: true
