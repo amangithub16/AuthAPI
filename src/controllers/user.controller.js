@@ -135,6 +135,7 @@ return  res.status(200)
 }
 
 const logoutUser = async(req, res)=>{
+  
 
 }
 
