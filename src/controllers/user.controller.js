@@ -111,7 +111,7 @@ const loginUser = async(req, res)=>{
   if(!user){
     res.status(401).json("user not found")
   }
-  const databasePassword = await user.password
+  const databasePassword =  user.password
    const validatePassword = await isPasswordCorrected(password,databasePassword)
   console.log(typeof validatePassword);
   console.log( validatePassword);

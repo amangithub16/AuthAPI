@@ -12,7 +12,7 @@ app.use(cors({origin: '*'}))
 import userRouter from './routes/user.routes.js'
 
 app.use(cors())
-app.use('/', async(req,res)=>{
+app.post('/', async(req,res)=>{
     res.send("Welcome to the API")
 })
 app.use('/api', userRouter)
